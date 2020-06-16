@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class ServerComponent {
-    serverId: number = 10;
+    serverId: number = 1;
     serverStatus: string = 'online';
 }
 
