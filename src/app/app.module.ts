@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 import { WarningComponent } from './warning/warning.component';
 import { SuccessComponent } from './success/success.component';
 
@@ -10,6 +11,7 @@ import { SuccessComponent } from './success/success.component';
   declarations: [
     AppComponent,
     ServerComponent,
+    ServersComponent,
     WarningComponent,
     SuccessComponent
   ],
