@@ -9,3 +9,16 @@
     [disabled]="!username"
     (click)="username = ''"
 >Enter Username</button>
+<hr>
+<!-- <button 
+    class="btn btn-primary"
+    (click)="showSecret = !showSecret"
+>Toggle Secret</button> -->
+<button 
+    class="btn btn-primary"
+    (click)="onToggleCount()"
+    >Toggle Secret</button>
+<p *ngIf="showSecret">The secret is pig</p>
+<p *ngFor="let logItem of log"
+    [ngStyle]="{backgroundColor: logItem >= 5 ? 'aqua' : 'transparent'}"
+    [ngClass]="{'white-text' : logItem >= 5}">{{ logItem }}</p>

@@ -9,6 +9,13 @@ import { Component } from '@angular/core';
 export class UsernameComponent {
     username = '';
     creationUser = 'No user created';
+    showSecret = false;
+    log = [];
+
+    onToggleCount() {
+        this.showSecret = !this.showSecret;
+        this.log.push(this.log.length + 1);
+    }
 
     onCreateUser() {
         this.creationUser = 'Your username has been created!';
@@ -16,5 +23,9 @@ export class UsernameComponent {
 
     onUsername() {
         this.username = (<HTMLInputElement>event.target).value;
+    }
+
+    onClick() {
+        
     }
 }
